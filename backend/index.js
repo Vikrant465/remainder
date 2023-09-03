@@ -8,7 +8,7 @@ app.use(express.json())
 app.use(express.urlencoded())
 app.use(cors())
 
-mongoose.connect('mongodb://127.0.0.1:27017/reminderbackend',{
+mongoose.connect('mongodb+srv://vikrant:admin@cluster0.0hxxray.mongodb.net/?retryWrites=true&w=majority',{
     useNewUrlParseR:true ,
     useUnifiedTopology:true
 },).then(()=>console.log('DB connected'))
